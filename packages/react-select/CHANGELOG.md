@@ -1,5 +1,25 @@
 # react-select
 
+## 3.2.0
+
+### Minor Changes
+
+- [c615e93d](https://github.com/JedWatson/react-select/commit/c615e93dbca15b9f9c6c3e6437744ca53703347f) [#4084](https://github.com/JedWatson/react-select/pull/4084) Thanks [@JedWatson](https://github.com/JedWatson)! - Changed the `cx` and `getValue` props that are passed to components into instance properties, which means they now pass a referential equality check on subsequent renders.
+
+  This is helpful, for example, when you're optimising the performance of rendering custom Option components - see [#3055](https://github.com/JedWatson/react-select/issues/3055)
+
+- [72f6036f](https://github.com/JedWatson/react-select/commit/72f6036fa6f425837c8c2326bf91dff7bd7f6147) [#4306](https://github.com/JedWatson/react-select/pull/4306) Thanks [@bladey](https://github.com/bladey)! - Remove duplicate prop createOptionPosition
+
+### Patch Changes
+
+- [ee638d46](https://github.com/JedWatson/react-select/commit/ee638d4615e789090ea860d2e1c9f4d95a829d50) [#4275](https://github.com/JedWatson/react-select/pull/4275) Thanks [@Methuselah96](https://github.com/Methuselah96)! - Adds react ^17.0.0 to peer dependencies for React 17 support
+
+- [ad890f27](https://github.com/JedWatson/react-select/commit/ad890f279300b6baaca55a642141999a79af8883) [#4326](https://github.com/JedWatson/react-select/pull/4326) Thanks [@Methuselah96](https://github.com/Methuselah96)! - Updated react-input-autosize to v3.0.0
+
+- [24ba8702](https://github.com/JedWatson/react-select/commit/24ba8702b93885790ee919de8c01ea8f44d1c354) [#4289](https://github.com/JedWatson/react-select/pull/4289) Thanks [@slimklim](https://github.com/slimklim)! - Added `innerProps` prop to the built-in `MenuList` component to reduce the need for additional DOM nodes or forking internal code when passing additional props to the DOM element the MenuList component is rendering.
+
+  See issue [#4265](https://github.com/JedWatson/react-select/issues/4265) for an explanation.
+
 ## 3.1.1
 
 ### Patch Changes
